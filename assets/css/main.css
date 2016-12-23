@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Sans"), local("FiraSans-Regular"), url(http://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url(http://fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono"), local("FiraMono"), url(http://fonts.gstatic.com/s/firamono/v3/SlRWfq1zeqXiYWAN-lnG-pBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/* line 3, base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 9, base/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 13, base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 29, base/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 37, base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 42, base/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* line 47, base/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/* line 51, base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 56, base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 60, base/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 65, base/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 69, base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 74, base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 79, base/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 83, base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 91, base/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 95, base/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 99, base/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 103, base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 107, base/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 111, base/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 117, base/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/* line 121, base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 129, base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 139, base/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 143, base/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/* line 148, base/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 156, base/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/* line 161, base/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 167, base/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 171, base/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 177, base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 182, base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 189, base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 194, base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 200, base/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 205, base/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/* line 209, base/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 213, base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 218, base/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* line 2, base/_typography.sass */
+body {
+  color: #fff;
+  font-family: "Roboto", sans-serif; }
+
+/* line 8, base/_typography.sass */
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6 {
+  color: #fff; }
+
+/* line 12, base/_typography.sass */
+.gigantic {
+  font-size: 110px;
+  line-height: 1.09;
+  letter-spacing: -2px; }
+
+/* line 17, base/_typography.sass */
+.huge, h1 {
+  font-size: 38px;
+  line-height: 1.05; }
+
+/* line 21, base/_typography.sass */
+.large, h2 {
+  font-size: 42px;
+  line-height: 1.14; }
+
+/* line 25, base/_typography.sass */
+.bigger, h3 {
+  font-size: 26px;
+  line-height: 1.38; }
+
+/* line 29, base/_typography.sass */
+.big, h4 {
+  font-size: 22px;
+  line-height: 1.38; }
+
+/* line 33, base/_typography.sass */
+.small, small {
+  font-size: 10px;
+  line-height: 1.2; }
+
+/* line 40, base/_typography.sass */
+p {
+  margin: 0 0 20px 0; }
+
+/* line 43, base/_typography.sass */
+em {
+  font-style: italic; }
+
+/* line 46, base/_typography.sass */
+strong {
+  font-weight: bold; }
+
+/* line 49, base/_typography.sass */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
+
+/* line 1, layout/_page.sass */
+body {
+  background: url("../img/bg/red.jpg");
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+/* line 6, layout/_page.sass */
+.topbar {
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.1); }
+  /* line 11, layout/_page.sass */
+  .topbar .brand {
+    font-size: 40px;
+    letter-spacing: 0.26em;
+    float: left; }
+  /* line 16, layout/_page.sass */
+  .topbar .navbar {
+    float: right; }
+    /* line 22, layout/_page.sass */
+    .topbar .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      float: left;
+      margin-right: 20px; }
+
+/* line 1, page/_home.sass */
+.homepage {
+  max-width: 1070px;
+  margin: auto; }
+
+/* line 6, page/_home.sass */
+.specialties {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  padding-top: 100px; }
+  /* line 14, page/_home.sass */
+  .specialties ul li {
+    list-style: none; }
+    /* line 18, page/_home.sass */
+    .specialties ul li:before {
+      content: "";
+      padding-right: 20px;
+      border-left: 3px solid; }
+  /* line 23, page/_home.sass */
+  .specialties .webdesign {
+    color: #ed2024; }
+  /* line 25, page/_home.sass */
+  .specialties .graphic {
+    color: #ded03f; }
+  /* line 27, page/_home.sass */
+  .specialties .branding {
+    color: #605d84; }
+
+/* line 30, page/_home.sass */
+.homeContent {
+  font-size: 16px;
+  line-height: 2.4; }
+
+/*# sourceMappingURL=main.css.map */
