@@ -23,11 +23,5 @@ app.config(function($routeProvider) {
     })
     .when("/test", {
         templateUrl : "test.htm"
-    })
-    .when("/green", {
-        templateUrl : "green.htm"
-    })
-    .when("/blue", {
-        templateUrl : "blue.htm"
     });
 });
